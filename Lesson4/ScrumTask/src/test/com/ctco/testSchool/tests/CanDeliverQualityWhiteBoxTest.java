@@ -52,7 +52,6 @@ public class CanDeliverQualityWhiteBoxTest {
         Assert.assertTrue(myTeam.canDeliverQuality());
     }
 
-
     @Test
     public void canDeliverQualityWBTooMuchStoryPoints(){
         Team myTeam = new Team();
@@ -138,4 +137,168 @@ public class CanDeliverQualityWhiteBoxTest {
         Assert.assertTrue(myTeam.canDeliverQuality());
     }
 
+    @Test
+    public void canDeliverQualityWBTooMuchTestingPoints() {
+        Team myTeam = new Team();
+        Member developer1 = new Member(DEV);
+        Member developer2 = new Member(DEV);
+        Member tester = new Member(TEST);
+        tester.velocity = 0.8;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        Story story1 = new Story();
+        story1.setStoryPoints(2);
+        story1.setTestPoints(5);
+
+        Story story2 = new Story();
+        story2.setStoryPoints(3);
+        story2.setTestPoints(5);
+
+        List<Story> stories = new ArrayList<Story>();
+        stories.add(story1);
+        stories.add(story2);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse(myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityWBEmptyBacklog() { //Null pointer exception
+        Team myTeam = new Team();
+        Member developer1 = new Member(DEV);
+        Member developer2 = new Member(DEV);
+        Member tester = new Member(TEST);
+        tester.velocity = 0.8;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        Assert.assertTrue(myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityWBNoTeamMembers() {
+        Team myTeam = new Team();
+
+        Story story1 = new Story();
+        story1.setStoryPoints(2);
+        story1.setTestPoints(5);
+
+        Story story2 = new Story();
+        story2.setStoryPoints(3);
+        story2.setTestPoints(5);
+
+        List<Story> stories = new ArrayList<Story>();
+        stories.add(story1);
+        stories.add(story2);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse(myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityWBZeroSprintDays() {
+        Team myTeam = new Team();
+        Member developer1 = new Member(DEV);
+        Member developer2 = new Member(DEV);
+        Member tester = new Member(TEST);
+        tester.velocity = 0.8;
+
+        myTeam.sprintDays = 0;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        Story story1 = new Story();
+        story1.setStoryPoints(2);
+        story1.setTestPoints(1);
+
+        Story story2 = new Story();
+        story2.setStoryPoints(3);
+        story2.setTestPoints(5);
+
+        List<Story> stories = new ArrayList<Story>();
+        stories.add(story1);
+        stories.add(story2);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse(myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityWBZeroTestingPoints() {
+        Team myTeam = new Team();
+        Member developer1 = new Member(DEV);
+        Member developer2 = new Member(DEV);
+        Member tester = new Member(TEST);
+        tester.velocity = 0.8;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        Story story1 = new Story();
+        story1.setStoryPoints(2);
+        story1.setTestPoints(0);
+
+        List<Story> stories = new ArrayList<Story>();
+        stories.add(story1);
+
+        myTeam.backlog = stories;
+
+        Assert.assertTrue(myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityWBNoTestingPoints() {
+        Team myTeam = new Team();
+        Member developer1 = new Member(DEV);
+        Member developer2 = new Member(DEV);
+        Member tester = new Member(TEST);
+        tester.velocity = 0.8;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        Story story1 = new Story();
+        story1.setStoryPoints(2);
+
+        List<Story> stories = new ArrayList<Story>();
+        stories.add(story1);
+
+        myTeam.backlog = stories;
+
+        Assert.assertTrue(myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityWBZeroTesterVelocity(){
+        Team myTeam = new Team();
+        Member developer1 = new Member(DEV);
+        Member tester = new Member(TEST);
+        tester.velocity = 0;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(tester);
+
+        Story story1 = new Story();
+        story1.setStoryPoints(3);
+        story1.setTestPoints(1);
+
+        List<Story> stories = new ArrayList<Story>();
+        stories.add(story1);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse(myTeam.canDeliverQuality());
+    }
 }
