@@ -52,7 +52,7 @@ public class CanDeliverQualityBlackBoxTest {
         story1.setStoryPoints(5);
         story1.setTestPoints(2);
 
-        story2.setStoryPoints(8);
+        story2.setStoryPoints(5);
         story2.setTestPoints(2);
 
         story3.setStoryPoints(5);
