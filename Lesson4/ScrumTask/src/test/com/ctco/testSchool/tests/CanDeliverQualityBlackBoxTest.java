@@ -3,10 +3,10 @@ package com.ctco.testSchool.tests;
 import com.ctco.testSchool.Member;
 import com.ctco.testSchool.Story;
 import com.ctco.testSchool.Team;
+
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,35 +15,53 @@ import static com.ctco.testSchool.Member.type.DEV;
 import static com.ctco.testSchool.Member.type.TEST;
 
 public class CanDeliverQualityBlackBoxTest {
+    Team myTeam;
+    Member developer1;
+    Member developer2;
+    Member tester;
+
+    List<Story> stories;
+
+    Story story1;
+    Story story2;
+    Story story3;
+    Story story4;
+
+    @BeforeEach
+    public void before(){
+        myTeam = new Team();
+        developer1 = new Member(DEV);
+        developer2 = new Member(DEV);
+        tester = new Member(TEST);
+
+        stories = new ArrayList<Story>();
+
+        story1 = new Story();
+        story2 = new Story();
+        story3 = new Story();
+        story4 = new Story();
+    }
 
     @Test
     public void canDeliverQualityHappyPath() {
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
-        Member developer2 = new Member(DEV);
-        Member tester = new Member(TEST);
 
         myTeam.addMember(developer1);
         myTeam.addMember(developer2);
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(5);
         story1.setTestPoints(2);
 
-        Story story2 = new Story();
         story2.setStoryPoints(8);
         story2.setTestPoints(2);
 
-        Story story3 = new Story();
         story3.setStoryPoints(5);
         story3.setTestPoints(3);
 
-        Story story4 = new Story();
         story4.setStoryPoints(5);
         story4.setTestPoints(3);
 
-        List<Story> stories = new ArrayList<Story>();
+
         stories.add(story1);
         stories.add(story2);
         stories.add(story3);
@@ -52,195 +70,220 @@ public class CanDeliverQualityBlackBoxTest {
         myTeam.backlog = stories;
 
         Assert.assertTrue(myTeam.canDeliverQuality());
+
+        myTeam.sprintDays = 9;
+        Assert.assertFalse(myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityTooMuchTestingPoints() {
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
-        Member developer2 = new Member(DEV);
-        Member tester = new Member(TEST);
-
         myTeam.addMember(developer1);
         myTeam.addMember(developer2);
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(5);
         story1.setTestPoints(3);
 
-        Story story2 = new Story();
         story2.setStoryPoints(8);
         story2.setTestPoints(8);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
         stories.add(story2);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse(myTeam.canDeliverQuality());
+        Assert.assertFalse("Quality cannot be delivered because testing points are larger than tester capacity", myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityTooMuchStoryPoints() {
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
-        Member developer2 = new Member(DEV);
-        Member tester = new Member(TEST);
-
         myTeam.addMember(developer1);
         myTeam.addMember(developer2);
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(13);
         story1.setTestPoints(3);
 
-        Story story2 = new Story();
         story2.setStoryPoints(8);
         story2.setTestPoints(3);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
         stories.add(story2);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse(myTeam.canDeliverQuality());
+        Assert.assertFalse("Quality cannot be delivered because story points are larger than developers capacity", myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityTestingCannotFitIntoSprint() {
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
-        Member developer2 = new Member(DEV);
-        Member tester = new Member(TEST);
 
         myTeam.addMember(developer1);
         myTeam.addMember(developer2);
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(8);
         story1.setTestPoints(5);
 
-        Story story2 = new Story();
         story2.setStoryPoints(3);
         story2.setTestPoints(3);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
         stories.add(story2);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse(myTeam.canDeliverQuality());
+        Assert.assertFalse("Quality cannot be delivered because 1 tested cannot test both stories during sprint because of timeline", myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityNoDevelopers(){
-        Team myTeam = new Team();
-        Member tester = new Member(TEST);
 
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(8);
         story1.setTestPoints(5);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse(myTeam.canDeliverQuality());
+        Assert.assertFalse("Quality cannot be delivered because team has no developers to implement story", myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityNoTesters(){
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
 
         myTeam.addMember(developer1);
 
-        Story story1 = new Story();
         story1.setStoryPoints(1);
         story1.setTestPoints(1);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse(myTeam.canDeliverQuality());
+        Assert.assertFalse("Quality cannot be delivered because team has no testers",myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityOnlyTestingPoints(){
-        Team myTeam = new Team();
-        Member tester = new Member(TEST);
 
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(0);
         story1.setTestPoints(5);
 
-        Story story2 = new Story();
         story2.setStoryPoints(0);
         story2.setTestPoints(5);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
         stories.add(story2);
 
         myTeam.backlog = stories;
 
-        Assert.assertTrue(myTeam.canDeliverQuality());
+        Assert.assertTrue("Quality can be delivered without developers if stories has only testing points", myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityNoTestingRequired(){
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
-        Member tester = new Member(TEST);
 
         myTeam.addMember(developer1);
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(3);
         story1.setTestPoints(0);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
 
         myTeam.backlog = stories;
 
-        Assert.assertTrue(myTeam.canDeliverQuality());
+        Assert.assertTrue("Quality can be delivered if testing not required for story", myTeam.canDeliverQuality());
     }
 
     @Test
     public void canDeliverQualityZeroTesterVelocity(){
-        Team myTeam = new Team();
-        Member developer1 = new Member(DEV);
-        Member tester = new Member(TEST);
         tester.velocity = 0;
 
         myTeam.addMember(developer1);
         myTeam.addMember(tester);
 
-        Story story1 = new Story();
         story1.setStoryPoints(3);
         story1.setTestPoints(1);
 
-        List<Story> stories = new ArrayList<Story>();
         stories.add(story1);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse(myTeam.canDeliverQuality());
+        Assert.assertFalse("Quality cannot be delivered if tested has 0 velocity",myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityZeroDeveloperVelocity(){
+        developer1.velocity = 0;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(tester);
+
+        story1.setStoryPoints(3);
+        story1.setTestPoints(1);
+
+        stories.add(story1);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse("Quality cannot be delivered if developer has 0 velocity",myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityZeroSprintDays() {
+        tester.velocity = 0.8;
+
+        myTeam.sprintDays = 0;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        story1.setStoryPoints(2);
+        story1.setTestPoints(1);
+
+        story2.setStoryPoints(3);
+        story2.setTestPoints(5);
+
+        stories.add(story1);
+        stories.add(story2);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse("Quality cannot be delivered with 0 sprint duration", myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityNoTeamMembers() {
+        story1.setStoryPoints(2);
+        story1.setTestPoints(5);
+
+        story2.setStoryPoints(3);
+        story2.setTestPoints(5);
+
+        stories.add(story1);
+        stories.add(story2);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse("Quality cannot be delivered without developers and testers", myTeam.canDeliverQuality());
+    }
+
+    @Test
+    public void canDeliverQualityEmptyBacklog() { //Null pointer exception
+        tester.velocity = 0.8;
+
+        myTeam.addMember(developer1);
+        myTeam.addMember(developer2);
+        myTeam.addMember(tester);
+
+        Assert.assertTrue(myTeam.canDeliverQuality());
     }
 
 }
