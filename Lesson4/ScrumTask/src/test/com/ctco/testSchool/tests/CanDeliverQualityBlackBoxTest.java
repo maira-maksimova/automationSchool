@@ -13,6 +13,8 @@ import java.util.List;
 
 import static com.ctco.testSchool.Member.type.DEV;
 import static com.ctco.testSchool.Member.type.TEST;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class CanDeliverQualityBlackBoxTest {
     Team myTeam;
@@ -215,7 +217,13 @@ public class CanDeliverQualityBlackBoxTest {
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse("Quality cannot be delivered if tested has 0 velocity",myTeam.canDeliverQuality());
+        try {
+            myTeam.canDeliverQuality();
+            fail("Expected to fail with 0 tester velocity");
+
+        } catch(IllegalArgumentException e){
+            assertEquals("Velocity should be positive", e.getMessage());
+        }
     }
 
     @Test
@@ -232,31 +240,31 @@ public class CanDeliverQualityBlackBoxTest {
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse("Quality cannot be delivered if developer has 0 velocity",myTeam.canDeliverQuality());
+        try {
+            myTeam.canDeliverQuality();
+            fail("Expected to fail with 0 developer velocity");
+
+        } catch(IllegalArgumentException e){
+            assertEquals("Velocity should be positive", e.getMessage());
+        }
     }
 
     @Test
     public void canDeliverQualityZeroSprintDays() {
-        tester.velocity = 0.8;
 
         myTeam.sprintDays = 0;
 
-        myTeam.addMember(developer1);
-        myTeam.addMember(developer2);
-        myTeam.addMember(tester);
-
-        story1.setStoryPoints(2);
-        story1.setTestPoints(1);
-
-        story2.setStoryPoints(3);
-        story2.setTestPoints(5);
-
         stories.add(story1);
-        stories.add(story2);
 
         myTeam.backlog = stories;
 
-        Assert.assertFalse("Quality cannot be delivered with 0 sprint duration", myTeam.canDeliverQuality());
+        try {
+            myTeam.canDeliverQuality();
+            fail("Expected to fail with 0 story points");
+
+        }catch (IllegalArgumentException e){
+            assertEquals("Sprint should be at least two days long", e.getMessage());
+        }
     }
 
     @Test
@@ -276,14 +284,45 @@ public class CanDeliverQualityBlackBoxTest {
     }
 
     @Test
-    public void canDeliverQualityEmptyBacklog() { //Null pointer exception
-        tester.velocity = 0.8;
-
+    public void canDeliverQualityTestingCannotBeDone() { //2 stories each with 5 story points and 5 testing points, 1 developer and 1 tester
         myTeam.addMember(developer1);
-        myTeam.addMember(developer2);
         myTeam.addMember(tester);
 
-        Assert.assertTrue(myTeam.canDeliverQuality());
+        story1.setStoryPoints(5);
+        story1.setTestPoints(5);
+
+        story2.setStoryPoints(5);
+        story2.setTestPoints(5);
+
+        stories.add(story1);
+        stories.add(story2);
+
+        myTeam.backlog = stories;
+
+        Assert.assertFalse(myTeam.canDeliverQuality());
     }
+
+    @Test
+    public void canDeliverQualityIncreasedVelocity() {
+        myTeam.addMember(developer1);
+        developer1.velocity = 2;
+
+        myTeam.backlog = stories;
+
+        try {
+            myTeam.canDeliverQuality();
+            fail("Expected to fail with velocity larger than 1");
+
+        }catch (IllegalArgumentException e){
+            assertEquals("Velocity can't be more than 1", e.getMessage());
+        }
+    }
+
+
+    //velocity 0.99
+
+    //1+1, 7+1 1 dev 1 tester
+
+    //3 developers, 4 stories with 6 story points False
 
 }
