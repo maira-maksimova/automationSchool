@@ -173,7 +173,7 @@ public class APITests {
                 .and()
                 .extract().as(ListResourceResponse.class);
 
-        assertEquals( 2,listResourceResponse.getTotal_pages());
+        assertTrue(listResourceResponse.getTotal_pages() >= 2, "Expected total pages to be equal/larger than 2 but was: " + listResourceResponse.getTotal_pages());
 
         int count = 0;
         for(Resource resource : listResourceResponse.data){
