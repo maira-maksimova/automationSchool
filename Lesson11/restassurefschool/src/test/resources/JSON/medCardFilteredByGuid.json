@@ -1,0 +1,3 @@
+{
+  "query": "query MedicalCards {  medicalCard(braceletId: \"{{guid}}\") {guid  active    personalInfo {      updatedOn      firstname      lastname      personalcode      phone      dateofbirth      age      street      flat      height      weight    }  }}"
+}

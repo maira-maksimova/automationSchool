@@ -1,0 +1,3 @@
+{
+  "query": "query bracelets {  bracelets {    guid    braceletId    pin  }}"
+}
