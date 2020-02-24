@@ -5,6 +5,24 @@ public class Story {
     int storyPoints;
     int testPoints;
 
+    public  Story(){
+
+        storyPoints = 1;
+        testPoints = 1;
+    }
+
+    public Story(int storyPoints){
+        this();
+        this.storyPoints = storyPoints;
+
+    }
+
+    public Story(int storyPoints, int testPoints){
+        this(storyPoints);
+        this.testPoints = testPoints;
+
+    }
+
     public int getStoryPoints() {
         return storyPoints;
     }

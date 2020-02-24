@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6790b1b1-fa2a-494d-b101-59a904417b44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" afterDir="false" />
+    <list default="true" id="6790b1b1-fa2a-494d-b101-59a904417b44" name="Default Changelist" comment="Add WhiteBox tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityBlackBoxTest.java" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityBlackBoxTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityWhiteBoxTest.java" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityWhiteBoxTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ctco/testSchool/Team.class" afterPath="$PROJECT_DIR$/target/classes/com/ctco/testSchool/Team.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,87 +22,96 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="CanDeliverTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="575">
+              <caret line="47" column="33" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="47" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#704#711#0" expanded="true" />
-                <element signature="e#1991#1998#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="107">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <file leaf-file-name="CanDeliverQualityBlackBoxTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityBlackBoxTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="208" column="5" lean-forward="true" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
+            <state relative-caret-position="451">
+              <caret line="224" column="33" lean-forward="true" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
               <folding>
-                <element signature="e#2111#2112#0" expanded="true" />
-                <element signature="e#2155#2156#0" expanded="true" />
-                <element signature="e#5951#6086#0" expanded="true" />
-                <element signature="e#6085#6086#0" expanded="true" />
-                <element signature="e#6484#6648#0" expanded="true" />
-                <element signature="e#6647#6648#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1248#1255#0" expanded="true" />
+                <element signature="e#2070#2077#0" expanded="true" />
+                <element signature="e#2834#2841#0" expanded="true" />
+                <element signature="e#3605#3612#0" expanded="true" />
+                <element signature="e#4091#4098#0" expanded="true" />
+                <element signature="e#4552#4559#0" expanded="true" />
+                <element signature="e#5118#5125#0" expanded="true" />
+                <element signature="e#5691#5698#0" expanded="true" />
+                <element signature="e#6265#6272#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <file leaf-file-name="CanDeliverQualityWhiteBoxTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityWhiteBoxTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="250">
+              <caret line="260" column="49" lean-forward="false" selection-start-line="260" selection-start-column="49" selection-end-line="260" selection-end-column="49" />
+              <folding>
+                <element signature="method#canDeliverQualityWBHappyPath#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBTooMuchStoryPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBNoDevelopers#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBTestingCannotFitIntoSprint#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBTooMuchTestingPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBEmptyBacklog#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBNoTeamMembers#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBZeroSprintDays#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBZeroTestingPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBNoTestingPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="method#canDeliverQualityWBZeroTesterVelocity#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+                <element signature="e#7991#7998#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Team.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="-528">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="30" />
               <folding>
                 <element signature="e#263#264#0" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
-                <element signature="method#canDeliverQuality#0;class#Team#0" />
+                <element signature="method#canDeliver#0;class#Team#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Story.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Story.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="125">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding>
                 <element signature="e#225#226#0" expanded="true" />
                 <element signature="e#271#272#0" expanded="true" />
@@ -106,11 +120,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="200">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,13 +139,32 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tester.velocity</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ctco/testSchool/TasksTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java" />
+        <option value="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityWhiteBoxTest.java" />
+        <option value="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityBlackBoxTest.java" />
       </list>
     </option>
   </component>
@@ -178,16 +212,64 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -244,35 +326,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScrumTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScrumTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,6 +339,117 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityBlackBoxTest.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityWhiteBoxTest.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -298,61 +462,151 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CanDeliverTest">
-    <configuration name="CanDeliverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScrumTask" />
-      <extension name="coverage">
+  <component name="RunManager" selected="JUnit.CanDeliverQualityWhiteBoxTest">
+    <configuration name="CanDeliverQualityWhiteBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="ScrumTask" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverQualityWhiteBoxTest" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
-    <configuration name="CanDeliverTest.happyPathCanDeliverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScrumTask" />
-      <extension name="coverage">
+    <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTeamMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="METHOD_NAME" value="happyPathCanDeliverTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanDeliverTest.negativeCanDeliverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
-      <extension name="coverage">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverQualityWhiteBoxTest" />
+      <option name="METHOD_NAME" value="canDeliverQualityWBNoTeamMembers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTestingPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="ScrumTask" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="METHOD_NAME" value="negativeCanDeliverTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverQualityWhiteBoxTest" />
+      <option name="METHOD_NAME" value="canDeliverQualityWBNoTestingPoints" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
+    <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroSprintDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ScrumTask" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverQualityWhiteBoxTest" />
+      <option name="METHOD_NAME" value="canDeliverQualityWBZeroSprintDays" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroTestingPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ScrumTask" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverQualityWhiteBoxTest" />
+      <option name="METHOD_NAME" value="canDeliverQualityWBZeroTestingPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTeamMembers" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroSprintDays" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroTestingPoints" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTestingPoints" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest" />
+    </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CanDeliverTest" />
-        <item itemvalue="JUnit.CanDeliverTest.happyPathCanDeliverTest" />
-        <item itemvalue="JUnit.CanDeliverTest.negativeCanDeliverTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTestingPoints" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroTestingPoints" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroSprintDays" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTeamMembers" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -366,81 +620,97 @@
       <updated>1580113687772</updated>
       <workItem from="1580113692789" duration="3494000" />
     </task>
+    <task id="LOCAL-00001" summary="Add CanDeliverQuality black box tests">
+      <created>1580332189075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580332189075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 10h 59m 38s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest - 2020.01.30 at 20h 08m 50s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 10h 59m 56s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBEmptyBacklog - 2020.01.30 at 19h 59m 59s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBEmptyBacklog" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 11h 03m 13s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBNoTeamMembers - 2020.01.30 at 20h 00m 36s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTeamMembers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 11h 05m 54s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBNoTeamMembers - 2020.01.30 at 20h 02m 47s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTeamMembers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 11h 06m 15s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBNoTeamMembers - 2020.01.30 at 20h 02m 55s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTeamMembers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 11h 07m 51s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBNoTestingPoints - 2020.01.30 at 20h 06m 47s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBNoTestingPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_negativeCanDeliverTest - 2020.01.27 at 11h 14m 42s.xml">
-      <configuration name="CanDeliverTest.negativeCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBTooMuchTestingPoints - 2020.01.30 at 19h 39m 24s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBTooMuchTestingPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest_happyPathCanDeliverTest - 2020.01.27 at 11h 15m 08s.xml">
-      <configuration name="CanDeliverTest.happyPathCanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBZeroSprintDays - 2020.01.30 at 20h 05m 21s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroSprintDays" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest - 2020.01.27 at 11h 16m 26s.xml">
-      <configuration name="CanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBZeroTestingPoints - 2020.01.30 at 20h 06m 10s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroTestingPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CanDeliverTest - 2020.01.27 at 11h 17m 01s.xml">
-      <configuration name="CanDeliverTest" configurationId="JUnit" />
+    <history-entry file="CanDeliverQualityWhiteBoxTest_canDeliverQualityWBZeroTestingPoints - 2020.01.30 at 20h 06m 21s.xml">
+      <configuration name="CanDeliverQualityWhiteBoxTest.canDeliverQualityWBZeroTestingPoints" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="3494000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="JProfiler" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.16577825" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32580262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39952436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16577825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add CanDeliverQuality black box tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CanDeliverQuality black box tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -451,86 +721,180 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java</url>
+          <line>37</line>
+          <properties />
+        </line-breakpoint>
       </breakpoints>
+      <option name="time" value="1" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/TestTeamVelocity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="625">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="350">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1579544737268" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579544737268" expanded="true" signature="277:284" ph="{}" />
+            <marker date="1579544737268" expanded="true" signature="327:499" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="5200">
           <caret line="208" column="5" lean-forward="true" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
           <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#5951#6086#0" expanded="true" />
-            <element signature="e#6085#6086#0" expanded="true" />
-            <element signature="e#6484#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
+            <marker date="1579544737268" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579544737268" expanded="false" signature="141:1608" ph="..." />
+            <marker date="1579544737268" expanded="true" signature="2055:2206" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="2110:2125" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2146:2156" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2189:2200" ph="{}" />
+            <marker date="1579544737268" expanded="true" signature="2283:2373" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="2434:2445" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2477:2483" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2727:2968" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3027:3350" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3484:3811" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3873:4063" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4122:4446" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4492:4767" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4832:5044" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5108:5315" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5375:5560" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5604:5864" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5934:6093" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="5951:6022" ph="evaluate() → { " />
+            <marker date="1579544737268" expanded="false" signature="6062:6086" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="6135:6146" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6159:6165" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="6224:6742" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="6484:6540" ph="run() → {" />
+            <marker date="1579544737268" expanded="false" signature="6625:6648" ph="}" />
+            <marker date="1579544737268" expanded="false" signature="6774:6785" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6817:6823" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="6866:6877" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6899:6905" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="7008:7452" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="7503:7514" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="7553:7559" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="7601:7948" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7992:8470" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="8540:9373" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9411:9937" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9994:10195" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="10245:10622" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="10676:10687" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="10737:10743" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="10811:11038" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="10828:10894" ph="compare(o1, o2) → {" />
+            <marker date="1579544737268" expanded="false" signature="11016:11031" ph="}" />
+            <marker date="1579544737268" expanded="false" signature="11095:11106" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="11133:11139" ph=" }" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="525">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1579544737268" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579544737268" expanded="false" signature="141:1212" ph="..." />
+            <marker date="1579544737268" expanded="true" signature="1480:1509" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="1585:1846" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="1902:1913" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="1962:1968" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2034:2414" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="2465:2476" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2509:2515" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="2573:2584" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2643:2649" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2722:2995" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3070:3293" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3358:3463" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3535:3724" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3796:4123" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="4164:4175" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="4247:4253" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="4259:4277" ph="/**...*/" />
+            <marker date="1579544737268" expanded="true" signature="4361:4683" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4743:4832" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4891:4987" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5052:5131" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5184:5262" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="5317:5328" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="5352:5358" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="5420:6198" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="5477:5575" ph="runReflectiveCall() → {" />
+            <marker date="1579544737268" expanded="false" signature="5657:5676" ph="}" />
+            <marker date="1579544737268" expanded="false" signature="6274:6285" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6323:6329" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="6436:6646" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="6652:6670" ph="/**...*/" />
+            <marker date="1579544737268" expanded="true" signature="6785:7004" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7102:7308" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7405:7606" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7700:7943" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="8066:8373" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="8433:8444" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="8470:8476" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="8530:8781" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="8890:9023" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9082:9330" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9409:9521" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="9576:9587" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="9640:9646" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="9692:9703" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="9757:9763" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="method#canDeliver#0;class#Team#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Story.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="225">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#225#226#0" expanded="true" />
             <element signature="e#271#272#0" expanded="true" />
@@ -538,26 +902,272 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Member.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="375">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/TestTeamVelocity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="method#canDeliverQuality#0;class#Team#0" />
+            <marker date="1579544737268" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579544737268" expanded="true" signature="277:284" ph="{}" />
+            <marker date="1579544737268" expanded="true" signature="327:499" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3875">
+          <caret line="208" column="5" lean-forward="false" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
+          <folding>
+            <marker date="1579544737268" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579544737268" expanded="false" signature="141:1608" ph="..." />
+            <marker date="1579544737268" expanded="true" signature="2055:2206" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="2110:2125" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2146:2156" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2189:2200" ph="{}" />
+            <marker date="1579544737268" expanded="true" signature="2283:2373" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="2434:2445" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2477:2483" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2727:2968" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3027:3350" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3484:3811" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3873:4063" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4122:4446" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4492:4767" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4832:5044" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5108:5315" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5375:5560" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5604:5864" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5934:6093" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="5951:6022" ph="evaluate() → { " />
+            <marker date="1579544737268" expanded="false" signature="6062:6086" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="6135:6146" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6159:6165" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="6224:6742" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="6484:6540" ph="run() → {" />
+            <marker date="1579544737268" expanded="false" signature="6625:6648" ph="}" />
+            <marker date="1579544737268" expanded="false" signature="6774:6785" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6817:6823" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="6866:6877" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6899:6905" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="7008:7452" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="7503:7514" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="7553:7559" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="7601:7948" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7992:8470" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="8540:9373" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9411:9937" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9994:10195" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="10245:10622" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="10676:10687" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="10737:10743" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="10811:11038" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="10828:10894" ph="compare(o1, o2) → {" />
+            <marker date="1579544737268" expanded="false" signature="11016:11031" ph="}" />
+            <marker date="1579544737268" expanded="false" signature="11095:11106" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="11133:11139" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1579544737268" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1579544737268" expanded="false" signature="141:1212" ph="..." />
+            <marker date="1579544737268" expanded="true" signature="1480:1509" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="1585:1846" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="1902:1913" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="1962:1968" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2034:2414" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="2465:2476" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2509:2515" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="2573:2584" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="2643:2649" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="2722:2995" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3070:3293" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3358:3463" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3535:3724" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="3796:4123" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="4164:4175" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="4247:4253" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="4259:4277" ph="/**...*/" />
+            <marker date="1579544737268" expanded="true" signature="4361:4683" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4743:4832" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="4891:4987" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5052:5131" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="5184:5262" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="5317:5328" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="5352:5358" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="5420:6198" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="5477:5575" ph="runReflectiveCall() → {" />
+            <marker date="1579544737268" expanded="false" signature="5657:5676" ph="}" />
+            <marker date="1579544737268" expanded="false" signature="6274:6285" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="6323:6329" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="6436:6646" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="6652:6670" ph="/**...*/" />
+            <marker date="1579544737268" expanded="true" signature="6785:7004" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7102:7308" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7405:7606" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="7700:7943" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="8066:8373" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="8433:8444" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="8470:8476" ph=" }" />
+            <marker date="1579544737268" expanded="true" signature="8530:8781" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="8890:9023" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9082:9330" ph="{...}" />
+            <marker date="1579544737268" expanded="true" signature="9409:9521" ph="{...}" />
+            <marker date="1579544737268" expanded="false" signature="9576:9587" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="9640:9646" ph=" }" />
+            <marker date="1579544737268" expanded="false" signature="9692:9703" ph=" { " />
+            <marker date="1579544737268" expanded="false" signature="9757:9763" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="575">
+          <caret line="47" column="33" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="47" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#704#711#0" expanded="true" />
-            <element signature="e#1991#1998#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/TasksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="138" column="10" lean-forward="false" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Story.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="method#canDeliver#0;class#Team#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityBlackBoxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="224" column="33" lean-forward="true" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1248#1255#0" expanded="true" />
+            <element signature="e#2070#2077#0" expanded="true" />
+            <element signature="e#2834#2841#0" expanded="true" />
+            <element signature="e#3605#3612#0" expanded="true" />
+            <element signature="e#4091#4098#0" expanded="true" />
+            <element signature="e#4552#4559#0" expanded="true" />
+            <element signature="e#5118#5125#0" expanded="true" />
+            <element signature="e#5691#5698#0" expanded="true" />
+            <element signature="e#6265#6272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverQualityWhiteBoxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="260" column="49" lean-forward="false" selection-start-line="260" selection-start-column="49" selection-end-line="260" selection-end-column="49" />
+          <folding>
+            <element signature="method#canDeliverQualityWBHappyPath#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBTooMuchStoryPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBNoDevelopers#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBTestingCannotFitIntoSprint#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBTooMuchTestingPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBEmptyBacklog#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBNoTeamMembers#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBZeroSprintDays#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBZeroTestingPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBNoTestingPoints#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="method#canDeliverQualityWBZeroTesterVelocity#0;class#CanDeliverQualityWhiteBoxTest#0" expanded="false" />
+            <element signature="e#7991#7998#0" expanded="true" />
           </folding>
         </state>
       </provider>
