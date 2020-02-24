@@ -1,0 +1,114 @@
+{
+  "id": "ac3024c3-25f8-45bc-a199-49a03d8d282c",
+  "version": "2.0",
+  "name": "Homework",
+  "url": "https://www.ctco.lv/",
+  "tests": [{
+    "id": "a42ccb8e-b522-4a2f-961a-d858f473c9fd",
+    "name": "testverifyTestAutomationEngineerVacancy",
+    "commands": [{
+      "id": "7ace4a1c-45ed-4b89-ab63-3b9b559fb9e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bdddcc0-4a07-490a-9951-f236c4da5c4f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1248x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99e9bcd8-d55d-4891-87b7-7d5a4b432cf2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=*[data-test=\"91\"]",
+      "targets": [
+        ["css=*[data-test=\"91\"]", "css:data-attr"],
+        ["css=.js-proportional > .text-block", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d1b4dccf-a6e7-430d-ad53-7102706b634a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-proportional > .text-block .button-bg",
+      "targets": [
+        ["css=.js-proportional > .text-block .button-bg", "css:finder"],
+        ["xpath=//a[6]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8158d7b-78c2-4933-85bf-210b53005e2e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.table-cell-display > .text-block > h1",
+      "targets": [
+        ["css=.table-cell-display > .text-block > h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Vacancies')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a0c7ad74-e40e-45f5-b6e7-ef32ecc3b8b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Test Automation Engineer",
+      "targets": [
+        ["linkText=Test Automation Engineer", "linkText"],
+        ["css=#menu-item-3249 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Test Automation Engineer')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-3249']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ctco.lv/careers/vacancies/test-automation-engineer-2/')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Test Automation Engineer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52ca810d-b968-4cc4-96d6-885ed06e4c53",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.active h1",
+      "targets": [
+        ["css=.active h1", "css:finder"],
+        ["xpath=//div[14]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Test Automation Engineer')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d5bd0161-6c65-42b9-8af5-147196a226a2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//p[contains(.,'Professional skills and qualification:')]/following-sibling::p[contains(.,'Selenium')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca7ef397-d3bf-47d3-bb23-2f51f0f95305",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//p[contains(.,'Professional skills and qualification:')]/following-sibling::p[contains(.,'communication skills')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4f5f4af-979a-4e2e-ae7c-866bfe6ae695",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//p[contains(.,'Professional skills and qualification:')]/following-sibling::p[contains(.,'Good level in English')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ed5ebfd9-14dc-4c0d-a90c-26fef1b0719a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.1a.lv/", "https://www.ctco.lv/"],
+  "plugins": []
+}

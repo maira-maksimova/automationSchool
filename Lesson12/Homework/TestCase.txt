@@ -1,0 +1,10 @@
+1) Open Ctco.lv
+2) Wait for page to load (Home page has Vacancies widget displayed )
+3) Click on All Vacancies
+4) Wait for vacancies to load (List of vacancies displayed)
+5) Find and click on Test automation engineer
+6) Wait for Test automation engineer vacancy loaded (Header displayed)
+7) Find "Professional skills and qualification:" section and assert requirements contains:
+	- Good Level in English,
+	- communication skills
+	- Selenium
