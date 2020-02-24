@@ -42,8 +42,8 @@ public class APITests {
                 .then()
                 .statusCode(200)
                 .extract().as(User[].class);
-        assertEquals(users[0].getId(), 1);
-        assertEquals(users[1].getUsername(), "Bret");
+        assertEquals(1, users[0].getId());
+        assertEquals("Antonette", users[1].getUsername());
     }
 
     @Test
@@ -55,8 +55,8 @@ public class APITests {
                 .then()
                 .statusCode(200)
                 .extract().as(Post[].class);
-        assertEquals(users[0].getId(), 1);
-        assertEquals(users[1].getTitle(), "qui est esse");
+        assertEquals(1, users[0].getId());
+        assertEquals("qui est esse", users[1].getTitle());
     }
 
     @Test
@@ -68,9 +68,9 @@ public class APITests {
                 .then()
                 .statusCode(200)
                 .extract().as(ToDo[].class);
-        assertEquals(users[0].getId(), 1);
-        assertEquals(users[0].getTitle(), "delectus aut autem");
-        assertEquals(users[0].isCompleted(), false);
+        assertEquals(1, users[0].getId());
+        assertEquals("delectus aut autem", users[0].getTitle());
+        assertEquals(false, users[0].isCompleted());
     }
 
     @Test
@@ -82,10 +82,10 @@ public class APITests {
                 .then()
                 .statusCode(200)
                 .extract().as(ToDo.class);
-        assertEquals(toDo.getId(), 1);
-        assertEquals(toDo.getTitle(), "delectus aut autem");
-        assertEquals(toDo.isCompleted(), false);
-        assertEquals(toDo.getUserId(), 1);
+        assertEquals( 1, toDo.getId());
+        assertEquals( "delectus aut autem", toDo.getTitle());
+        assertEquals( false, toDo.isCompleted());
+        assertEquals( 1, toDo.getUserId());
     }
 
     @Test
@@ -147,7 +147,6 @@ public class APITests {
     @Test
     public void getUserPage2Test() {
 
-
         UserPage userPage = given()
                 .spec(spec2)
                 .urlEncodingEnabled(true)
@@ -157,10 +156,32 @@ public class APITests {
                 .and()
                 .extract().as(UserPage.class);
 
-        assertEquals(userPage.data[0].getId(), 7);
-        assertEquals(userPage.data[0].getEmail(), "michael.lawson@reqres.in");
-        assertEquals(userPage.data[0].getFirst_name(), "Michael");
+        assertEquals( 7,userPage.data[0].getId());
+        assertEquals( "michael.lawson@reqres.in", userPage.data[0].getEmail());
+        assertEquals( "Michael", userPage.data[0].getFirst_name());
+    }
 
+    @Test
+    public void geListResourceTest() {
+
+        ListResourceResponse listResourceResponse = given()
+                .spec(spec2)
+                .urlEncodingEnabled(true)
+                .when()
+                .get("unknown")
+                .then().statusCode(200)
+                .and()
+                .extract().as(ListResourceResponse.class);
+
+        assertTrue(listResourceResponse.getTotal_pages() >= 2, "Expected total pages to be equal/larger than 2 but was: " + listResourceResponse.getTotal_pages());
+
+        int count = 0;
+        for(Resource resource : listResourceResponse.data){
+            if(resource.name.equals("true red")){
+                count++;
+            }
+        }
+        assertEquals( 1, count, "Expected true red to be present once");
     }
 
 
