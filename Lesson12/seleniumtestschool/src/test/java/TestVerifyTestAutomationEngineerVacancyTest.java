@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CtcoPage;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -48,12 +51,15 @@ public class TestVerifyTestAutomationEngineerVacancyTest {
         waitForElementToBeVisibleBy(ctcoPage.carrerSubMenuLocator);
         ctcoPage.getVacanciesLink().click();
 
+
         waitForElementToBeVisibleBy(ctcoPage.vacanciesListLocator);
-        ctcoPage.getTestEngineerLink().click();
+        ctcoPage.clickOnVacancy("Test Automation Engineer");
+
 
         waitForElementToBeVisibleBy(ctcoPage.requiredSkillsLocator);
+        ctcoPage.getVacancyRequiredSkills();
         assertEquals("Test Automation Engineer", ctcoPage.getVacancyTitle().getText(), "Wrong vacancy present");
-        String requiredSkills = ctcoPage.getRequiredSkills().getText();
+        String requiredSkills = ctcoPage.getVacancyRequiredSkills();
 
         assertTrue(requiredSkills.contains("Selenium"), "Expected requirements to contain Selenium but was: " + requiredSkills);
         assertTrue(requiredSkills.contains("communication skills"), "Expected requirements to contain communication skills but was: " + requiredSkills);
@@ -64,5 +70,21 @@ public class TestVerifyTestAutomationEngineerVacancyTest {
     public void waitForElementToBeVisibleBy(By by) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
+
+
+    private WebElement getElement(WebDriver driver, By locator) {
+        return new WebDriverWait(driver, 5)
+                .pollingEvery(Duration.ofSeconds(1))
+                .ignoring(StaleElementReferenceException.class)
+                .withMessage("Unable to find element located by: " + locator)
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    private boolean isElementPresent(WebDriver driver,By locator){
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        boolean result = driver.findElements(locator).size()>0;
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        return result;
     }
 }
