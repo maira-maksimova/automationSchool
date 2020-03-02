@@ -64,7 +64,6 @@ public class CtcoPage {
         WebElement requestedVacancy = vacancies.stream()
                 .filter(vacancy -> vacancy.getText().equals(vanacyName))
                 .findAny().orElse(null);
-        ;
 
         try {
             requestedVacancy.click();
